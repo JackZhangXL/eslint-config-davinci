@@ -1,10 +1,10 @@
 # eslint-config-davinci
 
-eslint 配置文件
+eslint config base on airbnb
 
-支持 `ES6` 和 `JSX`
+support `ES6` and `JSX`
 
-项目名取自文艺复兴时期莱昂纳多.达.芬奇，每个程序员都是艺术家~
+Name was taken from the Renaissance Leonardo da Vinci, every programmer is an artist~
 
 # Installation
 
@@ -12,15 +12,15 @@ eslint 配置文件
 
 `yarn add eslint-config-davinci eslint eslint-loader --dev`
 
-* 项目根目录新建文件 `.eslintrc`
+* create file `.eslintrc` at root path
 
 ```json
 {
-    "extends": "@dp/eslint-config-leonardo"
+    "extends": "eslint-config-davinci"
 }
 ```
 
-* `package.json` 里添加
+* add `package.json`
 
 ```json
 {
@@ -30,11 +30,11 @@ eslint 配置文件
 }
 ```
 
-* `webpack.config` 里添加
+* add `webpack.config` (optional)
 
 ``` JavaScript
     module: {
-        // webpack 1.* 写法
+        // webpack 1.*
         loaders: [
             {
                 enforce: 'pre',
@@ -45,7 +45,7 @@ eslint 配置文件
                 loader: 'eslint-loader',
             }
         ]
-        // webpack 2.* 写法
+        // webpack 2.*
         rules: [
             {
                 enforce: 'pre',

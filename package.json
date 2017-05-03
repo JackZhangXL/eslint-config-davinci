@@ -1,0 +1,32 @@
+{
+  "name": "eslint-config-davinci",
+  "version": "1.0.0",
+  "description": "eslint config",
+  "main": "index.js",
+  "scripts": {
+    "release": "standard-version && git push origin master --follow-tags && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackZhangXL/eslint-config-davinci.git"
+  },
+  "author": "JackZhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JackZhangXL/eslint-config-davinci/issues"
+  },
+  "homepage": "https://github.com/JackZhangXL/eslint-config-davinci#readme",
+  "dependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
+  },
+  "devDependencies": {
+    "standard-version": "^4.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^3.18.0"
+  }
+}
