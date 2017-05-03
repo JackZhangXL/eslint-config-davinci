@@ -33,28 +33,28 @@ Name was taken from the Renaissance Leonardo da Vinci, every programmer is an ar
 * add `webpack.config` (optional)
 
 ``` JavaScript
-    module: {
-        // webpack 1.*
-        loaders: [
-            {
-                enforce: 'pre',
-                test: /\.js$/,
-                include: [
-                    path.resolve(BASEDIR, 'src'),
-                ],
-                loader: 'eslint-loader',
-            }
-        ]
-        // webpack 2.*
-        rules: [
-            {
-                enforce: 'pre',
-                test: /\.js$/,
-                include: [
-                    path.resolve(BASEDIR, 'src'),
-                ],
-                loader: 'eslint-loader',
-            }
-        ]
-    },
+module: {
+    // webpack 1.*
+    loaders: [
+        {
+            enforce: 'pre',
+            test: /\.js$/,
+            include: [
+                path.resolve(BASEDIR, 'src'),
+            ],
+            loader: 'eslint-loader',
+        }
+    ]
+    // webpack 2.*
+    rules: [
+        {
+            enforce: 'pre',
+            test: /\.js$/,
+            include: [
+                path.resolve(BASEDIR, 'src'),
+            ],
+            loader: 'eslint-loader',
+        }
+    ]
+},
 ```
